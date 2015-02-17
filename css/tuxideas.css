@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,700,400);
+
+body {
+  font-family: 'Ek Mukta', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.menu {
+  font-weight: 200;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.site-header {
+  background: url('../img/startupstockphotos_86511222726.jpg') no-repeat scroll;
+  background-size: cover;
+}
+
+.site-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.site-header-navigation {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.site-name,
+.site-navigation {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+.site-name {
+  width: 35%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.site-navigation {
+  width: 65%;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin-left: -4px;
+  width: 19.5%;
+  vertical-align: top;
+  padding-top: 25px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.site-navigation li:hover {
+  background-color: #21abcd;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.site-header .content{
+  margin: 100px 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+@media (max-width:320px){
+
+}

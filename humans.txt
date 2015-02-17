@@ -1,0 +1,26 @@
+/* TEAM */
+
+  Chief: Mario Alberto Contreras Vazquez
+  Contact: macvirgo14 [at] tuxideas.com
+  Twitter: @macvirgo14
+  From: Veracruz, Mexico
+
+  DesignerDeveloperSysAdmin: Mikhail Cruz Andrade
+  Contact: jailandrade [at] gmail.com
+  Twitter: @jailandrade
+  from: Veracruz, Mexico
+
+
+/* THANKS */
+
+  Logo Designer: Yesenia Gisela Leyva Perez
+  Contact: giselaleyvap [at] gmail.com
+  From: Hidalgo, Mexico
+
+
+/* SITE */
+
+  Last Update: 2015/02/16
+  Language: Spanish
+  Doctype: HTML5
+  Software: Atom, Photoshop, iTerm
