@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,700,400);
 
+::-moz-selection,
+::selection {
+  background-color: #fff;
+  color: #21abcd;
+}
+
 body {
   font-family: 'Ek Mukta', sans-serif;
   font-weight: 400;
@@ -30,11 +36,6 @@ a {
   height: 100vh;
 }
 
-.site-header-navigation {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 .site-name,
 .site-navigation {
   display: inline-block;
@@ -45,7 +46,7 @@ a {
 .site-name {
   width: 35%;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .site-navigation {
@@ -57,9 +58,9 @@ a {
   margin-left: -4px;
   width: 19.5%;
   vertical-align: top;
-  padding-top: 25px;
+  padding-top: 35px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .site-navigation li:hover {
@@ -71,11 +72,25 @@ a {
   margin: 0 auto;
 }
 
-.site-header .content{
-  margin: 100px 0;
+.center{
+  margin: 250px auto;
+  max-width: 600px;
   text-align: center;
   font-size: 4rem;
   font-weight: 200;
+}
+
+.site-section-header {
+  color: #333;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.site-footer {
+  font-weight: 200;
+  color: #000;
 }
 
 @media (max-width:320px){
