@@ -99,6 +99,42 @@ a {
   padding: 25px 0;
 }
 
+.site-footer .left,
+.site-footer .right {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.site-footer .right {
+  margin-left: -4px;
+  text-align: right;
+}
+
+.name,
+.email,
+.subject {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+input,
+textarea {
+  margin-top: 1.8rem;
+  width: 100%;
+  padding: 1em 0.4em;
+  background: transparent;
+  border: 1px solid #0A6980;
+  border-radius: 2px;
+  color: #2c2c2c;
+}
+
+.submit {
+  width: 25%;
+  display: inline-block;
+}
+
 @media (max-width:320px){
 
 }
