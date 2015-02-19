@@ -17,6 +17,9 @@
   Contact: giselaleyvap [at] gmail.com
   From: Hidalgo, Mexico
 
+  Icons provided for The Noun Project:
+  Heart Icon created by John Caserta for The Noun Project
+
 
 /* SITE */
 
