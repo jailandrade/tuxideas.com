@@ -26,54 +26,94 @@
         </div>
         <div id="message-welcome" class="content">
           <div class="center">
-            <p>Tus ideas en Internet</p>
+            <p class="welcome">Tus ideas en Internet</p>
           </div>
         </div>
       </header>
       <section id="services" class="site-section">
         <div class="content">
           <header class="site-section-header">
-            <h2>Servicios</h2>
+            <h2 class="title">Servicios</h2>
           </header>
         </div>
       </section>
       <section id="work" class="site-section">
         <div class="content">
           <header class="site-section-header">
-            <h2>Trabajo</h2>
+            <h2 class="title">Trabajo</h2>
           </header>
         </div>
       </section>
       <section id="team" class="site-section">
         <div class="content">
           <header class="site-section-header">
-            <h2>Equipo</h2>
+            <h2 class="title">Equipo</h2>
           </header>
+          <main>
+            <div class="member">
+              <p>Mario Alberto Conteras Vazquez</p>
+              <img src="" alt="">
+              <span>Twitter</span>
+              <span>Github</span>
+              <span>Blog</span>
+              <p></p>
+            </div>
+            <div class="member">
+              <p></p>
+              <img src="" alt="">
+              <span>Twitter</span>
+              <span>Github</span>
+              <span>Blog</span>
+              <p></p>
+            </div>
+            <div class="member">
+              <p></p>
+              <img src="" alt="">
+              <span>Twitter</span>
+              <span>Github</span>
+              <span>Blog</span>
+              <p></p>
+            </div>
+          </main>
         </div>
       </section>
       <section id="contact" class="site-section">
         <div class="content">
           <header class="site-section-header">
-            <h2>Contacto</h2>
+            <h2 class="title">Contacto</h2>
           </header>
           <main>
-            <form action="">
-              <fieldset class="form-control name">
-                <input type="text" placeholder="Nombre:">
-              </fieldset>
-              <fieldset class="form-control email">
-                <input type="email" placeholder="Email:"></fieldset>
-              <fieldset class="form-control subject">
-                <input type="text" placeholder="Asunto:">
-              </fieldset>
-              <fieldset class="form-control textarea">
-                <textarea name="" id="" cols="30" rows="10">
-                </textarea>
-              </fieldset>
-              <fieldset class="form-control submit">
-                <input type="submit" value="Enviar">
-              </fieldset>
-            </form>
+            <div class="contact-message">
+              <p>Si quiere ponerse en contacto con nosotros dejenos un mensaje.</p>
+            </div>
+            <div class="form-container">
+              <form action="">
+                <fieldset class="form-group name">
+                  <input class="form-field" type="text" placeholder="Nombre:">
+                  <label class="form-label" for="name">
+                    <span class="form-label-content">Nombre:</span>
+                  </label>
+                </fieldset>
+                <fieldset class="form-group email">
+                  <input class="form-field" type="email" placeholder="Email:">
+                </fieldset>
+                <fieldset class="form-group subject">
+                  <select class="form-field" name="" id="">
+                    <option value="consultory">Consultoria</option>
+                    <option value="training">Entrenamiento</option>
+                    <option value="development">Desarrollo</option>
+                    <option value="invitation">Invitacion</option>
+                  </select>
+                </fieldset>
+                <fieldset class="form-group textarea">
+                  <textarea class="form-field" name="form-message" id="form-message" cols="30" rows="10">
+                  </textarea>
+                </fieldset>
+                <fieldset class="form-group submit">
+                  <input class="form-field" type="submit" value="Enviar">
+                </fieldset>
+              </form>
+            </div>
           </main>
         </div>
       </section>
