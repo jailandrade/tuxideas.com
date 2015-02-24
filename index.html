@@ -105,21 +105,18 @@
             <div class="form-container">
               <form class="form" action="">
                 <fieldset class="form-group name">
+                  <input class="form-field" type="text" placeholder="Nombre:">
                   <label class="form-label" for="name">
                     <span class="form-label-content">Nombre:</span>
                   </label>
-                  <input class="form-field" type="text" placeholder="Nombre:">
                 </fieldset>
                 <fieldset class="form-group email">
+                  <input class="form-field" type="email" placeholder="Email:">
                   <label class="form-label" for="email">
                     <span class="form-label-content">Email:</span>
                   </label>
-                  <input class="form-field" type="email" placeholder="Email:">
                 </fieldset>
                 <fieldset class="form-group subject">
-                  <label class="form-label" for="subject">
-                    <span class="form-label-content">Asunto:</span>
-                  </label>
                   <select class="form-field" name="" id="">
                     <option value="subject">Asunto</option>
                     <option value="consultory">Consultoria</option>
@@ -127,13 +124,15 @@
                     <option value="development">Desarrollo</option>
                     <option value="invitation">Invitacion</option>
                   </select>
+                  <label class="form-label" for="subject">
+                    <span class="form-label-content">Asunto:</span>
+                  </label>
                 </fieldset>
                 <fieldset class="form-group textarea">
+                  <textarea class="form-field" name="form-message" id="form-message" cols="30" rows="10"></textarea>
                   <label class="form-label" for="message">
                     <span class="form-label-content">Mensaje:</span>
                   </label>
-                  <textarea class="form-field" name="form-message" id="form-message" cols="30" rows="10">
-                  </textarea>
                 </fieldset>
                 <fieldset class="form-group submit">
                   <input class="form-field" type="submit" value="Enviar">

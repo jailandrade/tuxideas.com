@@ -24,11 +24,6 @@ body {
   font-weight: 400;
 }
 
-li > a,
-h1 > a {
-  color: #fff !important;
-}
-
 .title {
   font-weight: 700;
 }
@@ -68,7 +63,11 @@ Header Rules
   padding-top: 2em;
 }
 
-.site-name:hover a {
+.site-name a {
+  color: #fff;
+}
+
+.site-name a:hover{
   color: #21abcd;
 }
 
@@ -84,6 +83,10 @@ Header Rules
   padding-top: 2em;
   text-align: center;
   padding-bottom: 1em;
+}
+
+.site-navigation a{
+  color: #fff;
 }
 
 .site-navigation li:hover {
@@ -209,38 +212,44 @@ Form Rules
 }
 
 .form-field {
-  opacity: 0.4;
+  opacity: 0.5;
   margin: .5em 0;
   width: 100%;
   padding: 1em;
   background: transparent;
-  border: 1px solid #0A6980;
+  border: 2px solid #23B6DA;
   border-radius: 3px;
   color: #2c2c2c;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 
-.form-field:focus{
-  opacity: 1;
-  transition-delay: 0.2s;
-  border: none;
-  box-shadow: 0px 0px 0px 2px #62BFD5;
-}
-
 .form-label {
-  padding: 0 1em;
+  opacity: 0;
+  display: block;
+  padding: 0.5em 0.2em;
+  background-color: #23B6DA;
+  color: #fff;
   width: 100%;
   height: 100%;
   text-align: left;
   pointer-events: none;
+  border-radius: 3px;
 }
 
-.form-label-content {
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s 0.3s;
-          transition: transform 0.3s 0.3s;
+.form-field:focus{
+  opacity: 1;
+  transition-delay: 0.2s;
+  border: none;
+  box-shadow: 0px 0px 0px 2px #23B6DA;
 }
+
+.form-field:focus + .form-label{
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
 
 select.form-field {
   padding: 0.55em;
