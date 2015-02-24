@@ -96,11 +96,6 @@ Content Rules
 
 ===============================================*/
 
-.content {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .center{
   margin: 250px auto;
   max-width: 600px;
@@ -117,7 +112,49 @@ Content Rules
   color: #333;
   font-size: 2.4rem;
   text-align: center;
-  padding-top: 2em;
+  padding: 2em 0;
+}
+
+.site-section-content{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.member {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+/* ==============================================
+
+Icon Rules
+
+===============================================*/
+
+.icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding: 24px;
+  margin-right: 10px;
+}
+
+.twitter {
+  background: url('../img/twitter.png') scroll no-repeat;
+}
+
+.github {
+  background: url('../img/github.png') scroll no-repeat;
+}
+
+.web {
+  background: url('../img/web.png') scroll no-repeat;
+}
+
+.behance {
+  background: url('../img/behance.png') scroll no-repeat;
 }
 
 /* ==============================================
@@ -159,6 +196,10 @@ Form Rules
 
 ===============================================*/
 
+.form {
+  margin-top: 20px;
+}
+
 .name,
 .email,
 .subject {
@@ -168,8 +209,8 @@ Form Rules
 }
 
 .form-field {
-  opacity: 0;
-  margin: 1em 0;
+  opacity: 0.4;
+  margin: .5em 0;
   width: 100%;
   padding: 1em;
   background: transparent;
@@ -182,12 +223,12 @@ Form Rules
 
 .form-field:focus{
   opacity: 1;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
+  border: none;
+  box-shadow: 0px 0px 0px 2px #62BFD5;
 }
 
 .form-label {
-  position: absolute;
-  left: 0;
   padding: 0 1em;
   width: 100%;
   height: 100%;
@@ -195,37 +236,13 @@ Form Rules
   pointer-events: none;
 }
 
-.form-label::before,
-.form-label::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%,;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.4s;
-          transition: transform 0.4s;
-}
-
-.form-label::before{
-  border-top: 1px solid #21abcd;
-  transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-  transform-delay: 0.3s;
-}
-
-.form-label::after {
-  z-index: -1;
-  background: #21abcd;
-  transform: scale3d(1, 0, 1);
-  transform-origin: 50% 50%;
-}
-
 .form-label-content {
+  opacity: 0;
   -webkit-transition: -webkit-transform 0.3s 0.3s;
           transition: transform 0.3s 0.3s;
 }
 
-select {
+select.form-field {
   padding: 0.55em;
 }
 
@@ -239,6 +256,7 @@ select {
 }
 
 .submit:hover input {
+  opacity: 1;
   background-color: #21abcd;
   color: #fff;
   border: 1px solid #fff;
