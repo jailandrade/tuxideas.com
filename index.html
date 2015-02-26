@@ -4,18 +4,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/start.css">
     <link rel="stylesheet" href="css/tuxideas.css">
+    <link rel="icon" href="favicon.png" title="Tuxideas">
     <link type="text/plain" rel="author" href="http://tuxideas.com/humans.txt">
     <title>Tuxideas</title>
   </head>
   <body>
-    <div class="page">
+    <div class="site home">
       <header id="top" class="site-header site-section">
-        <div class="site-section-container">
+        <div class="site-header-brand site-section-container">
           <div class="site-name">
+            <img class="site-logo" src="img/logo.png" alt="" title="Created by Julien Deveaux from The Noun Project">
             <h1 class="title"><a href="#">Tuxideas</a></h1>
           </div>
           <nav class="site-navigation" role="navigation">
-            <ul class="menu">
+            <ul class="site-menu">
               <li><a href="#top">Home</a></li>
               <li><a href="#services">Servicios</a></li>
               <li><a href="#work">Trabajo</a></li>
@@ -24,7 +26,7 @@
             </ul>
           </nav>
         </div>
-        <div id="message-welcome" class="site-section-content">
+        <div id="message-welcome" class="site-description site-section-content">
           <div class="center">
             <p class="welcome">Tus ideas en Internet</p>
           </div>
@@ -34,18 +36,33 @@
         <div class="site-section-container">
           <header class="site-section-header">
             <h2 class="title">Servicios</h2>
-						<h3>Areas en las que somos expertos</h3>
+						<h3 class="subtitle">Areas en las que somos expertos</h3>
           </header>
 					<main class="site-section-content">
-						<div class="service">
-							<p>Desarrollo Lado Cliente</p>
-						</div>
-						<div class="service">
-							<p>Desarrollo Lado Servidor</p>
-						</div>
-						<div class="service">
-							<p>Desarrollo Movil</p>
-						</div>
+            <div class="services">
+  						<div class="service">
+                <img src="img/web.png" alt="" title="Created by Simple Icons from the Noun Project">
+  							<p>Desarrollo Lado Cliente</p>
+  						</div>
+  						<div class="service">
+                <img src="img/server.png" alt="" title="Created by Norbert Kucsera from the Noun Project">
+  							<p>Desarrollo Lado Servidor</p>
+  						</div>
+  						<div class="service">
+                <img src="img/mobile.png" alt="" title="Creatd by Yazzer Perez from the Noun Project">
+  							<p>Desarrollo Movil</p>
+  						</div>
+            </div>
+            <div class="stack">
+              <header>
+                <h4 class="title">Tecnologias con las que trabajamos</h4>
+                </header>
+              <div class="tech html5"></div>
+              <div class="tech css3"></div>
+              <div class="tech backbonejs"></div>
+              <div class="tech jquery"></div>
+              <div class="tech codeigniter"></div>
+            </div>
 					</main>
         </div>
       </section>
@@ -53,10 +70,12 @@
         <div class="site-section-container">
           <header class="site-section-header">
             <h2 class="title">Trabajo</h2>
-						<h3>Esto es lo que hemos hecho</h3>
+						<h3 class="subtitle">Esto es lo que hemos hecho</h3>
           </header>
 					<main class="site-section-content">
-
+            <div class="work"></div>
+            <div class="work"></div>
+            <div class="work"></div>
 					</main>
         </div>
       </section>
@@ -71,7 +90,7 @@
               <img src="" alt="">
               <a href="" class="icon twitter"></a>
               <a href="" class="icon github"></a>
-              <a href="" class="icon web"></a>
+              <a href="" class="icon link"></a>
               <p></p>
             </div>
             <div class="member">
@@ -79,7 +98,7 @@
               <img src="" alt="">
               <a href="" class="icon twitter"></a>
               <a href="" class="icon behance"></a>
-              <a href="" class="icon web"></a>
+              <a href="" class="icon link"></a>
               <p></p>
             </div>
             <div class="member">
@@ -87,7 +106,7 @@
               <img src="" alt="">
               <a href="" class="icon twitter"></a>
               <a href="" class="icon github"></a>
-              <a href="" class="icon web"></a>
+              <a href="" class="icon link"></a>
               <p></p>
             </div>
           </main>
@@ -105,19 +124,19 @@
             <div class="form-container">
               <form class="form" action="">
                 <fieldset class="form-group name">
-                  <input class="form-field" type="text" placeholder="Nombre:">
+                  <input class="form-field" required type="text" placeholder="Nombre:">
                   <label class="form-label" for="name">
                     <span class="form-label-content">Nombre:</span>
                   </label>
                 </fieldset>
                 <fieldset class="form-group email">
-                  <input class="form-field" type="email" placeholder="Email:">
+                  <input class="form-field" required type="email" placeholder="Email:">
                   <label class="form-label" for="email">
                     <span class="form-label-content">Email:</span>
                   </label>
                 </fieldset>
                 <fieldset class="form-group subject">
-                  <select class="form-field" name="" id="">
+                  <select class="form-field" required name="" id="">
                     <option value="subject">Asunto</option>
                     <option value="consultory">Consultoria</option>
                     <option value="training">Entrenamiento</option>
@@ -129,13 +148,13 @@
                   </label>
                 </fieldset>
                 <fieldset class="form-group textarea">
-                  <textarea class="form-field" name="form-message" id="form-message" cols="30" rows="10"></textarea>
+                  <textarea class="form-field" required name="form-message" id="form-message" cols="30" rows="8"></textarea>
                   <label class="form-label" for="message">
                     <span class="form-label-content">Mensaje:</span>
                   </label>
                 </fieldset>
                 <fieldset class="form-group submit">
-                  <input class="form-field" type="submit" value="Enviar">
+                  <input class="form-field" required type="submit" value="Enviar">
                 </fieldset>
               </form>
             </div>
@@ -146,7 +165,10 @@
         <div class="site-section-container">
 					<div class="site-section-content">
 	          <div class="left">
-	            <div class="social-networks"></div>
+	            <div class="social-networks">
+	              <a class="icon twitter" href=""></a>
+	              <a class="icon github" href=""></a>
+	            </div>
 	            <div class="copyright">
 	              <p>Todos los derechos reservados &copy; 2011 - 2015 Tuxideas</p>
 	            </div>
@@ -160,10 +182,12 @@
         </div>
       </footer>
     </div>
-    <script src="js/animation.js"></script>
+    <script src="js/animation.js" async></script>
     <script>
       document.addEventListener("DOMContentLoaded", function(){
-        add.EventListener("")
+        document.addEventListener("scroll", function(){
+          scrolling();
+        })
       });
     </script>
   </body>

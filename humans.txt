@@ -19,6 +19,7 @@
 
   Icons provided for The Noun Project:
   Heart Icon created by John Caserta for The Noun Project
+  Bulb Happy Icon Created by Julien Deveaux from The Noun Project
 
 
 /* SITE */

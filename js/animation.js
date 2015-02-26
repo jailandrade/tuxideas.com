@@ -3,24 +3,36 @@
  * @author Mikhail Cruz Andrade
  */
 
-/**
- * Detect if an element has focus
- * @param element
- * @returns {Boolean} elementHasFocus
- */
-function elementHasFocus( element ) {
+function scrolling(){
+
+	var nav = document.querySelector('.site-header-brand'),
+	logo = document.querySelector('.site-logo'),
+	scrollTop = document.body.scrollTop,
+	menu = document.querySelector('.site-navigation');
+
+	if(window.scrollY != scrollTop){
+		addClass(nav, 'scrolled');
+		logo.style.display = 'none';
+		addClass(menu, 'scrolled');
+	}
+	else {
+		removeClass(nav, 'scrolled');
+		removeClass(menu, 'scrolled');
+		logo.style.display = '';
+	}
 
 }
 
-/**
- * Show the label for the input that has focus
- *
- */
-function showLabel() {
-
+function addClass(el, className){
+	if (el.classList)
+	  el.classList.add(className);
+	else
+	  el.className += ' ' + className;
 }
 
-
-function addClass() {
-
+function removeClass(el, className){
+	if (el.classList)
+		el.classList.remove(className)
+	else
+		el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
 }
