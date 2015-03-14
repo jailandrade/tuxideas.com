@@ -47,25 +47,29 @@ body {
 /**
  * Site sections
  */
+ .site-header {
+   position:fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   margin: 0;
+   height: 60px;
+   z-index: 1000;
+   background: #109DC6;
+ }
 
-.site-header {
+
+.site-hero {
   background: url('../img/startupstockphotos_86511222726_optimizada.jpg'); no-repeat scroll;
   background-size: cover;
 }
 
-.site-header-brand {
-  position:fixed;
-  left: 0;
-  top: 0;
-  margin: 0;
-  height: 50px;
-  width: 100%;
-  z-index: 1000;
-  background: #198099;
+.site-section {
+  padding: 5em 0;
 }
 
-.site-section {
-  padding: 4em 0;
+.site-section .title {
+  margin-bottom: 10px;
 }
 
 .site-section-header {
@@ -75,7 +79,7 @@ body {
   padding: 1em 0;
 }
 
-.site-section-content{
+.site-section-container{
   width: 80%;
   margin: 0 auto;
 }
@@ -124,7 +128,7 @@ body {
   margin-left: -4px;
   width: 19.5%;
   text-align: center;
-  padding: 5px 0;
+  padding: 8px 0;
 }
 
 .site-navigation a{
@@ -132,8 +136,7 @@ body {
 }
 
 .site-navigation li:hover {
-  background-color: #21abcd;
-  border-radius: 3px;
+  border-bottom: 1px solid #fff;
 }
 
 /* Main */
@@ -173,8 +176,8 @@ body {
 .message-content:after,
 .message-content:before{
   color: #fff;
-  -webkit-animation: 3s linear ease-out 0s normal none infinite opacity;
-  animation: 3s linear ease-out 0s normal none infinite opacity;
+  -webkit-animation: 3s linear ease-out 0s normal none infinite opacitycurls;
+  animation: 3s linear ease-out 0s normal none infinite opacitycurls;
 }
 
 .visible {
@@ -193,13 +196,13 @@ body {
   line-height: 50px;
 }
 
-@-webkit-keyframes opacity {
+@-webkit-keyframes opacitycurls {
   0%   {opacity:0;}
   50%  {opacity:1;}
   100% {opacity:0;}
 }
 
-@keyframes opacity {
+@keyframes opacitycurls {
   0%   {opacity:0;}
   50%  {opacity:1;}
   100% {opacity:0;}
@@ -216,6 +219,7 @@ body {
   85%  {margin-top:-50px;}
   100% {margin-top:0;}
 }
+
 @keyframes change {
   0%   {margin-top:0;}
   15%  {margin-top:0;}
@@ -247,9 +251,19 @@ body {
 
 .stack .title {
   text-transform: uppercase;
-  padding: 5px 0;
+  padding: 10px 0 20px;
 }
 
+.site-work {
+  background-color: #666;
+}
+
+.site-work .title,
+.site-work .subtitle,
+.site-work .work,
+.site-work a {
+  color: #fff;
+}
 /* ==============================================
 
 Icon Rules
@@ -377,8 +391,8 @@ Form Rules
   margin: .5em 0 0;
   width: 100%;
   padding: 1em;
-  background: #23b6da;
-  border: 2px solid #23b6da;
+  background: #109DC6;
+  border: 2px solid #109DC6;
   border-radius: 2px;
   color: #fff;
   -webkit-transition: opacity 0.3s;
@@ -389,7 +403,7 @@ Form Rules
   opacity: 0;
   display: block;
   padding: 1em;
-  background-color: #23B6DA;
+  background-color: #109DC6;
   color: #fff;
   width: 100%;
   height: 100%;
