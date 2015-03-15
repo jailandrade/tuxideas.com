@@ -48,11 +48,10 @@ body {
  * Site sections
  */
  .site-header {
-   position:fixed;
-   left: 0;
-   top: 0;
-   right: 0;
-   margin: 0;
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   right: 0px;
    height: 60px;
    z-index: 1000;
    background: #109DC6;
@@ -89,7 +88,6 @@ body {
 .site-navigation {
   display: inline-block;
   vertical-align: top;
-  margin-left: -4px;
 }
 
 .site-name {
@@ -159,27 +157,6 @@ body {
   height: 50px;
 }
 
-.message-content:before {
-  content: '[';
-  position: absolute;
-  left: -30px;
-  line-height: 50px;
-}
-
-.message-content:after {
-  content: ']';
-  position: absolute;
-  right: -30px;
-  line-height: 50px;
-}
-
-.message-content:after,
-.message-content:before{
-  color: #fff;
-  -webkit-animation: 3s linear ease-out 0s normal none infinite opacitycurls;
-  animation: 3s linear ease-out 0s normal none infinite opacitycurls;
-}
-
 .visible {
   height: 50px;
   overflow: hidden;
@@ -188,24 +165,12 @@ body {
 .message-content ul{
   margin-top: 0;
   height:
-  -webkit-animation: 6s linear 0s normal none infinite change;
-  animation: 6s linear 0s normal none infinite change;
+  -webkit-animation: 10s linear 0s normal none infinite change;
+  animation: 10s linear 0s normal none infinite change;
 }
 
 .message-content li {
   line-height: 50px;
-}
-
-@-webkit-keyframes opacitycurls {
-  0%   {opacity:0;}
-  50%  {opacity:1;}
-  100% {opacity:0;}
-}
-
-@keyframes opacitycurls {
-  0%   {opacity:0;}
-  50%  {opacity:1;}
-  100% {opacity:0;}
 }
 
 @-webkit-keyframes change {
@@ -430,7 +395,7 @@ Form Rules
   box-shadow: 0px 0px 0px 2px #23B6DA;
 }
 
-select.form-field {
+.subject .form-field {
   padding: .55em;
 }
 
