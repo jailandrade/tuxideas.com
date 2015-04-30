@@ -16,11 +16,11 @@
     </div>
     <nav class="site-navigation" role="navigation">
       <ul class="site-menu">
-        <li><a href="#top">Home</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#work">Trabajo</a></li>
-        <li><a href="#team">Equipo</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href"http://tuxideas.com/index.html#top">Home</a></li>
+        <li><a href="http://tuxideas.com/index.html#services">Servicios</a></li>
+        <li><a href="http://tuxideas.com/index.html#work">Trabajo</a></li>
+        <li><a href="http://tuxideas.com/index.html#team">Equipo</a></li>
+        <li><a href="http://tuxideas.com/index.html#contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
