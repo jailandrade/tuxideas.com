@@ -165,8 +165,8 @@ body {
 .message-content ul{
   margin-top: 0;
   height:
-  -webkit-animation: 10s linear 0s normal none infinite change;
-  animation: 10s linear 0s normal none infinite change;
+  -webkit-animation: 8s linear 4s normal none infinite change;
+  animation: 8s linear 4s normal none infinite change;
 }
 
 .message-content li {
@@ -325,6 +325,10 @@ Contact Rules
 ===============================================*/
 .site-contact {
   background-color: #efefef;
+}
+
+.site-message {
+  padding-bottom: 500px;
 }
 
 
