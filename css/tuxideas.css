@@ -116,17 +116,21 @@ body {
 
 .site-navigation {
   width: 60%;
-  font-size: 1.1rem;
   text-transform: uppercase;
   padding-top: 1em;
 }
 
+.site-menu {
+  font-size: 0;
+}
+
 .site-menu li {
   display: inline-block;
-  margin-left: -4px;
-  width: 19.5%;
+  width: 16.6%;
   text-align: center;
   padding: 8px 0;
+  font-size: 1.1rem;
+
 }
 
 .site-navigation a{
@@ -225,6 +229,14 @@ body {
 
 .site-work {
   background-color: #666;
+}
+
+.site-about p {
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 .site-work .title,
