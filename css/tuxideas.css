@@ -330,6 +330,14 @@ Footer Rules
   font-size: 0;
 }
 
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  color: #54BFF0;
+}
+
 .blog {
   font-size: 1rem;
   border: 1px double #fff;
